@@ -24,6 +24,7 @@ public class AAA {
                 System.out.println("密码错误,你还有" + i + "次机会");
             }
             System.out.println();
+            System.out.println();
         }
     }
 }
