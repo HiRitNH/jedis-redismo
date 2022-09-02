@@ -39,6 +39,7 @@ public class AAA {
                 }
                 System.out.println("重置失败,电脑已感染鸡你太美病毒");
             }
+            System.out.println("123");
         }
     }
 }
