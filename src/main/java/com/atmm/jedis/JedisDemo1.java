@@ -3,6 +3,8 @@ package com.atmm.jedis;
 import org.junit.Test;
 import redis.clients.jedis.Jedis;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Set;
 
@@ -58,5 +60,27 @@ public class JedisDemo1 {
         jedis.zadd("china", 100d, "shanghai");
         Set<String> china = jedis.zrange("china", 0, -1);
         System.out.println(china);
+    }
+
+    @Test
+    public void demo6() {
+        List<String> list = Arrays.asList("Java", "Python", "Ruby", "JavaScript");
+//        User user = new User("吖",1);
+        List<User> users = new ArrayList<>();
+        users.add(new User("A", 1));
+        users.add(new User("B", 2));
+        for (User user : users) {
+            user.setAge(6);
+        }
+        UserArray userArray = new UserArray(users);
+        System.out.println(userArray.toString());
+    }
+
+    @Test
+    public void demo() {
+        String i = null;
+        if (i.equals("1")) {
+            System.out.println(i);
+        }
     }
 }
