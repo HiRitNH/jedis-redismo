@@ -4,6 +4,7 @@ import redis.clients.jedis.Jedis;
 
 import java.util.Random;
 
+@SuppressWarnings({"all"})
 public class PhoneCode {
     public static void main(String[] args) {
         verifyCode("19927603404");
