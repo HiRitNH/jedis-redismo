@@ -77,7 +77,7 @@ public class JedisDemo1 {
     }
 
     @Test
-    public void demo() {
+    public void demo9() {
         String i = null;
         if (i.equals("1")) {
             System.out.println(i);
